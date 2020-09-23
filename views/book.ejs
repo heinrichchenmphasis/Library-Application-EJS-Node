@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Book Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default" style="margin-bottom: 0;">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li><a href="/member">Member</a></li>
+            <li><a href="/book">Book</a></li>
+            <li><a href="/checkout">Checkout</a></li>
+          </ul>
+        </div>
+    </nav>
+
+<div class="jumbotron text-center mainBackground">
+    <div class="container">
+        <h1>Book Form</h1>
+        <p>
+            <form action="/book" method="POST" class = "form">
+                <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" name="title">
+                </div>
+
+                <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" class="form-control" id="author" name="author">
+                </div>
+
+                <div class="form-group">
+                <label for="bookReference">Book Reference</label>
+                <input type="text" class="form-control" id="bookReference" name="bookReference">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </p>
+    </div>
+
+</div>
+</body>
+</html>
+
+
